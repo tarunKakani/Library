@@ -1,10 +1,25 @@
-const myLibrary = [];
-function Book(){
+var display = document.getElementById("display");
+var addBtn = document.getElementById("addBtn");
+var bookName = document.getElementById("tittle");
+var bookAuthor = document.getElementById("author");
+var bookPages = document.getElementById("pages");
+var bookRead = document.getElementById("status");
 
+
+const myLibrary = [];
+
+function Book(tittle, author, pages, read){
+  this.tittle = tittle;
+  this.author = author;
+  this.pages = pages;
+  this.read = read;
+  this.display = function(){
+    display.innerHTML = ;
+  }
 }
 
 function addBookToLibrary(){
-    
+  
 }
 
 // function Book(title, author, pages, read){
