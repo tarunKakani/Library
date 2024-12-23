@@ -1,26 +1,65 @@
-var display = document.getElementById("display");
-var addBtn = document.getElementById("addBtn");
-var bookName = document.getElementById("tittle");
-var bookAuthor = document.getElementById("author");
-var bookPages = document.getElementById("pages");
-var bookRead = document.getElementById("status");
-
-
-const myLibrary = [];
-
-function Book(tittle, author, pages, read){
-  this.tittle = tittle;
-  this.author = author;
-  this.pages = pages;
-  this.read = read;
-  this.display = function(){
-    display.innerHTML = ;
-  }
+class Book {
+    constructor(title, author, pages, read) {
+        this.title = title;
+        this.author = author;
+        this.pages = pages;
+        this.read = read;
+    }
 }
 
-function addBookToLibrary(){
-  
+class Library {
+    constructor() {
+        this.books = [];
+    }
+
+    addBook(book) {
+        // Add implementation
+    }
+
+    removeBook(index) {
+        // Add implementation
+    }
+
+    toggleReadStatus(index) {
+        // Add implementation
+    }
 }
+
+// DOM Elements
+const addBookBtn = document.getElementById('addBookBtn');
+const bookFormModal = document.getElementById('bookFormModal');
+const bookForm = document.getElementById('bookForm');
+const libraryDisplay = document.getElementById('libraryDisplay');
+
+// Event Listeners
+addBookBtn.addEventListener('click', () => {
+    // Show modal implementation
+});
+
+bookForm.addEventListener('submit', (e) => {
+    e.preventDefault();
+    // Form handling implementation
+});
+
+// Function to create and display book cards
+function displayBooks() {
+    // Display implementation
+}
+
+// Function to create a single book card
+function createBookCard(book, index) {
+    // Card creation implementation
+}
+
+
+
+
+
+
+
+
+
+
 
 // function Book(title, author, pages, read){
 //     this.title = title;

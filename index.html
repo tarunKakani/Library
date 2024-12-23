@@ -1,21 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Library</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Welcome to your library</h1>
+    <div class="container">
+        <h1>Welcome to Personal Library</h1>
+        
+        <!-- Add Book Button -->
+        <button id="addBookBtn" class="add-book-btn">+ Add book</button>
 
-  <div class="container">
-    
-    <div id="card">
-      
-    </div> 
+        <!-- Modal Form -->
+        <div id="bookFormModal" class="modal">
+            <div class="modal-content">
+                <form id="bookForm">
+                    <input type="text" id="title" placeholder="Title" required>
+                    <input type="text" id="author" placeholder="Author" required>
+                    <input type="number" id="pages" placeholder="Pages" required>
+                    <div class="read-status">
+                        <label>
+                            <input type="checkbox" id="readStatus">
+                            Have you read it?
+                        </label>
+                    </div>
+                    <button type="submit">Add Book</button>
+                </form>
+            </div>
+        </div>
 
-  </div>
-
-  <script src="main.js"></script>
+        <!-- Books Display Area -->
+        <div id="libraryDisplay" class="library-grid"></div>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
